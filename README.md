@@ -14,7 +14,7 @@ We are using a generic scanner antenna (25-1300 MHz) connected to a custom bandp
 These programs require the following software:
  - [USRP Hardware Driver (UHD)](https://files.ettus.com/manual/index.html)
  - Boost C++ library (should be pre-installed)
- - [CUDA](https://developer.nvidia.com/cuda-zone)
+ - [CUDA (we use CUDA 8.0)](https://developer.nvidia.com/cuda-zone)
  - [SoX - Sound eXchange](http://sox.sourceforge.net/)
 
 # USRP stream program:
