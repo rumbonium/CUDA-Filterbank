@@ -8,7 +8,7 @@ These programs implement a software defined reciever that channelzes all 100 FM 
 We are using Ubuntu 16.04 LTS and a Nvidia GeForce GTX 1080 Ti GPU.
 
 # Radio hardware information
-We are using a generic scanner antenna (25-1300 MHz) connected to a custom bandpass filter (KR Electronics) passing the 20 MHz wide FM band (88-108 MHz).  The BPF output is connected to a USRP B205mini-i, which is connected to the PC via USB3.0.  The programs below shift the center of the FM band to zero frequency (zero-IF receiver) and the stations are separated using a filterbank implemented on the GPU.
+We are using a generic scanner antenna (25-1300 MHz) connected to a custom bandpass filter (KR Electronics) passing the 20 MHz wide FM band (88-108 MHz).  The BPF output is connected to a USRP B205mini-i, which is connected to the PC via USB3.0.  The programs below shift the center of the FM band to zero frequency (zero-IF receiver) and the stations are separated using a filterbank implemented on the GPU.  An FM station is demodulated and sample rate converted to 40 kSamples/second.  The audio signal is piped to Sox for listening.
 
 # Software, drivers, libraries
 These programs require the following software:
